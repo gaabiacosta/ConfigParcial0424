@@ -9,7 +9,7 @@ spring:
             database: test
             port: 27017
 server:
-    port: 0
+    port: ${PORT:${SERVER_PORT:0}}
 
 eureka:
   client:
